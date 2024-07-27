@@ -1,0 +1,4 @@
+#ifndef REFERENCE_CONFIG_H
+#define IMAGE_CONFIG_H
+#define REFERENCE_DIR "@REFERENCE_DIR@"
+#endif

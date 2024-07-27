@@ -1,0 +1,43 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/main.dir/src/engine/Engine0.1.cpp.obj"
+  "CMakeFiles/main.dir/src/engine/Engine0.1.cpp.obj.d"
+  "CMakeFiles/main.dir/src/engine/Engine01Wrapper.cpp.obj"
+  "CMakeFiles/main.dir/src/engine/Engine01Wrapper.cpp.obj.d"
+  "CMakeFiles/main.dir/src/engine/Engine02.cpp.obj"
+  "CMakeFiles/main.dir/src/engine/Engine02.cpp.obj.d"
+  "CMakeFiles/main.dir/src/engine/EngineWrapper.cpp.obj"
+  "CMakeFiles/main.dir/src/engine/EngineWrapper.cpp.obj.d"
+  "CMakeFiles/main.dir/src/engine/chessEngine0.0.cpp.obj"
+  "CMakeFiles/main.dir/src/engine/chessEngine0.0.cpp.obj.d"
+  "CMakeFiles/main.dir/src/engine/engine.cpp.obj"
+  "CMakeFiles/main.dir/src/engine/engine.cpp.obj.d"
+  "CMakeFiles/main.dir/src/engine/engineRandom.cpp.obj"
+  "CMakeFiles/main.dir/src/engine/engineRandom.cpp.obj.d"
+  "CMakeFiles/main.dir/src/engine/engineTest.cpp.obj"
+  "CMakeFiles/main.dir/src/engine/engineTest.cpp.obj.d"
+  "CMakeFiles/main.dir/src/engine/mainChess.cpp.obj"
+  "CMakeFiles/main.dir/src/engine/mainChess.cpp.obj.d"
+  "CMakeFiles/main.dir/src/gui/Board.cpp.obj"
+  "CMakeFiles/main.dir/src/gui/Board.cpp.obj.d"
+  "CMakeFiles/main.dir/src/gui/Button.cpp.obj"
+  "CMakeFiles/main.dir/src/gui/Button.cpp.obj.d"
+  "CMakeFiles/main.dir/src/gui/Gui.cpp.obj"
+  "CMakeFiles/main.dir/src/gui/Gui.cpp.obj.d"
+  "CMakeFiles/main.dir/src/gui/MoveGeneration.cpp.obj"
+  "CMakeFiles/main.dir/src/gui/MoveGeneration.cpp.obj.d"
+  "CMakeFiles/main.dir/src/gui/Piece.cpp.obj"
+  "CMakeFiles/main.dir/src/gui/Piece.cpp.obj.d"
+  "CMakeFiles/main.dir/src/gui/Promotion.cpp.obj"
+  "CMakeFiles/main.dir/src/gui/Promotion.cpp.obj.d"
+  "CMakeFiles/main.dir/src/gui/StartScreen.cpp.obj"
+  "CMakeFiles/main.dir/src/gui/StartScreen.cpp.obj.d"
+  "bin/main.exe"
+  "bin/main.exe.manifest"
+  "bin/main.pdb"
+  "libmain.dll.a"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/main.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
