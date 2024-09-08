@@ -341,6 +341,11 @@ void Engine::updateBoard(string move) {
 			pieceCounts[2 + promotionOffset]++;
 			break;
 		default: if (squares[targetSquare] != 0) { pieceCounts[targetArrayIndex]--; }
+			if ((squares[startSquare]&0x7) == 2 && (abs(startSquare-targetSquare) == 16)){
+				enPassantSquare = targetSquare;
+			} else {
+				enPassantSquare = -1;
+			}
 			squares[targetSquare] = squares[startSquare]; // normal move
 			break;
 		}
