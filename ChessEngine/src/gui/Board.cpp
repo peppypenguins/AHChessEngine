@@ -8,6 +8,7 @@ Board::Board(sf::RenderWindow* givenWindow, int& givenCurrSquare, bool& isPromot
 window = givenWindow;
 findTopLeft();
 fillNumToEdge();
+(void)findLegalMoves();
 }
 
 /*
@@ -602,6 +603,11 @@ void Board::normalMove(pair<int,int>movePair){
         delete pieceVector[targetIndex];
         pieceVector[targetIndex] = nullptr;
     }
+    if ((squares[movePair.first]&0x7) == 2 && (abs(movePair.first-movePair.second) == 16)){ // update enpassantsquare on double pawn push
+        enPassantSquare = movePair.second;
+    } else {
+        enPassantSquare = -1;
+    }
 
     int pieceIndex = findPieceBySquare(movePair.first);
         pieceIndexMap[movePair.second] = pieceIndex;
@@ -690,7 +696,6 @@ bool Board::isLegalMove(string move){
 checks if the board is currently in checkmate
 */
 bool Board::isCheckMate(){
-    (void)findLegalMoves();
     if (legalMoves.size() > 0){
         return false;
     } else {

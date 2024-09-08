@@ -451,7 +451,7 @@ VORBIS_LIBRARY:FILEPATH=C:/Users/Adam/projects/ChessEngine/build/_deps/sfml-src/
 WARNINGS_AS_ERRORS:BOOL=OFF
 
 //Dependencies for the target
-sfml-audio_LIB_DEPENDS:STATIC=general;sfml-system;
+sfml-audio_LIB_DEPENDS:STATIC=general;OpenAL::OpenAL;general;sfml-system;
 
 //Dependencies for the target
 sfml-graphics_LIB_DEPENDS:STATIC=general;sfml-window;
